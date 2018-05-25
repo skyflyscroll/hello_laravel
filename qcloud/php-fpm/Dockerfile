@@ -11,7 +11,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 	{ echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" \
 	&& php composer-setup.php \
 	&& php -r "unlink('composer-setup.php');" \
-	&& php /var/www/composer.phar install
+	&& php /var/www/composer.phar install \
 	&& php artisan generate:key \
 
 RUN chmod -R 777 storage
