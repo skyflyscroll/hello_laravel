@@ -12,10 +12,9 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 	&& php composer-setup.php \
 	&& php -r "unlink('composer-setup.php');" \
 	&& php /var/www/composer.phar install
+	&& php artisan generate:key \
 
 RUN chmod -R 777 storage
-
-RUN php artisan generate:key
 
 CMD ["php-fpm"]
 
