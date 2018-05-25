@@ -3,7 +3,6 @@ FROM ccr.ccs.tencentyun.com/yuki_laravel/php-fpm:latest
 LABEL maintainer="Mahmoud Zalt <mahmoud@zalt.me>"
 
 COPY . /var/www
-#COPY .env /var/www/.env
 
 WORKDIR /var/www
 
@@ -13,9 +12,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 	&& php composer-setup.php \
 	&& php -r "unlink('composer-setup.php');" \
 	&& php /var/www/composer.phar install \
-	&& php artisan key:generate
-
-RUN chmod -R 777 storage
+	&& php artisan key:generate \
+	&& chmod -R 777 storage
 
 CMD ["php-fpm"]
 
