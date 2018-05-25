@@ -6,7 +6,8 @@ ADD . /var/www/
 
 WORKDIR /var/www/
 
-RUN composer install \
+RUN docker-php-ext-install -j$(nproc) pdo_mysql mbstring gd bcmath\
+	&& composer install \
 	&& php artisan key:generate \
 	&& chmod -R 777 storage
 
