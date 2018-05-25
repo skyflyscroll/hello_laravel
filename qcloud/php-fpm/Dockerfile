@@ -12,7 +12,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 	&& php composer-setup.php \
 	&& php -r "unlink('composer-setup.php');" \
 	&& php /var/www/composer.phar install \
-	&& php artisan generate:key \
+	&& php artisan key:generate \
 
 RUN chmod -R 777 storage
 
