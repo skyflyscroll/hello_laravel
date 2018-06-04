@@ -130,7 +130,7 @@ aside {
 section.user_info {
   padding-bottom: 10px;
   margin-top: 20px;
-  text-align: center;
+  text-align:center;
   .gravatar {
     float: none;
     max-width: 70px;
@@ -149,6 +149,7 @@ section.user_info {
   max-width: 50px;
   border-radius: 50%;
 }
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
