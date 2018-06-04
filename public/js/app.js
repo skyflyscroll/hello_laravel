@@ -43299,7 +43299,7 @@ if (false) {
 /* 42 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n}\r\n^\r\n      Invalid CSS after \"}\": expected \"}\", was \"\"\r\n      in C:\\Users\\deepyk\\Desktop\\mine\\laravel_study\\Laravel\\resources\\assets\\sass\\app.scss (line 151, column 1)\n    at runLoaders (C:\\Users\\deepyk\\Desktop\\mine\\laravel_study\\Laravel\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\Users\\deepyk\\Desktop\\mine\\laravel_study\\Laravel\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Users\\deepyk\\Desktop\\mine\\laravel_study\\Laravel\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\Users\\deepyk\\Desktop\\mine\\laravel_study\\Laravel\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\Users\\deepyk\\Desktop\\mine\\laravel_study\\Laravel\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (C:\\Users\\deepyk\\Desktop\\mine\\laravel_study\\Laravel\\node_modules\\neo-async\\async.js:7974:18)\n    at options.error (C:\\Users\\deepyk\\Desktop\\mine\\laravel_study\\Laravel\\node_modules\\node-sass\\lib\\index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
